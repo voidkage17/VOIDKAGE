@@ -7,7 +7,11 @@
   <title>CONTACT — VOIDKAGE®</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800;900&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800;900&family=DM+Mono:wght@400;500&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800;900&family=DM+Mono:wght@400;500&display=swap" media="print" onload="this.media='all'">
+  <noscript>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800;900&family=DM+Mono:wght@400;500&display=swap">
+  </noscript>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -23,7 +27,7 @@
 
   <header class="nav">
     <a href="index.html" class="brand">
-      <span class="brand-logo"><img src="images/logo.png" alt="VOIDKAGE logo" onerror="this.parentElement.innerHTML='<span>VK</span>'"></span>
+      <span class="brand-logo"><img src="images/logo-nav.png" alt="VOIDKAGE logo" width="34" height="34" decoding="async" onerror="this.parentElement.innerHTML='<span>VK</span>'"></span>
       VOIDKAGE<span>®</span>
     </a>
     <div class="nav-center">
@@ -36,7 +40,7 @@
   </header>
 
   <div class="menu-panel">
-    <button class="menu-close">CLOSE ×</button>
+    <button class="menu-close" aria-label="Close menu">CLOSE ×</button>
     <nav>
       <a href="index.html" class="">00 — HOME</a>
       <a href="archive.html" class="">01 — ARCHIVE</a>
@@ -68,8 +72,6 @@
   </main>
 
   <footer><span>VOIDKAGE®</span><span>CHENNAI / INDIA</span><span>© 2026 — KEEP EVOLVING</span></footer>
-
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
-  <script src="script.js"></script>
+  <script src="script.js" defer></script>
 </body>
 </html>
